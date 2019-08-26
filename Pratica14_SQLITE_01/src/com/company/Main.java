@@ -12,12 +12,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        UsuariosDAO usuariosDAO;
-        usuariosDAO = new UsuariosDAO(Constants.URL_MEU_BANCO);
-        List<Usuario> meusUsuarios = usuariosDAO.getAllUsuario();
-        for (Usuario user: meusUsuarios){
-            System.out.println("ID: " + user.id);
-            System.out.println("Nome: " + user.nome);
-        }
+        Aplicacao app = new Aplicacao();
+        app.run();
+
     }
 }

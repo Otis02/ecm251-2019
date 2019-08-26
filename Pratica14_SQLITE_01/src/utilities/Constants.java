@@ -8,7 +8,7 @@ public class Constants {
     public static final String TABELA_USUARIO = "usuarios";
     public static final String SQL_INSERT_USUARIO = "INSERT INTO " + TABELA_USUARIO + "VALUES (?,?,?,?);";
     public static final String getInsert(String table, int paramsCount){
-        String sqlInsert = "INSERT INTO " + table + "VALUES ();";
+        String sqlInsert = "INSERT INTO " + table + " VALUES (";
         for (int i = 0; i <paramsCount-1; i++){
             sqlInsert += "?,";
         }
